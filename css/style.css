@@ -24,3 +24,101 @@
       --heading-font: "Raleway", sans-serif;
       --nav-font: "Poppins", sans-serif;
   }
+
+  a{
+    text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+    font-family: var(--heading-font);
+  }
+
+  body .header{
+    position: fixed;
+    width: 300px;
+    height: fit-content;
+    background-color: var(--heading-color);
+  }
+
+  .header .profile-img{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: 8px solid var(--default-color);
+    border-radius: 50%;
+  }
+
+  .header .logo{
+    position: relative;
+  }
+
+  .header h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--surface-color);
+  }
+
+  .header .social-links a{
+    background: var(--default-color);
+    border-radius: 50%;
+    color: var(--contrast-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    padding: 7px;
+    height: 40px;
+    width: 40px;
+    transition: 0.3s;
+  }
+
+  .header .social-links a:hover{
+    background: var(--accent-color);
+  }
+
+  .navmenu{
+    width: 300px;
+    margin: 0 0 20px 0;
+    padding: 0 0 40px 0;
+  }
+
+  .navmenu ul{
+    list-style: none;
+    line-height: 4rem;
+  }
+
+  .navmenu li a{
+    position: relative;
+    color: var(--nav-color);
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    white-space: nowrap;
+    transition: 0.3s;
+    width: 100%;
+  }
+
+  .navmenu li a:hover i{
+    color: var(--accent-color);
+  }
+  .navmenu li a:hover{
+    color: var(--nav-hover-color);
+  }
+
+  .navmenu li a i{
+    position: relative;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--nav-font);
+  }
+
+
+  
